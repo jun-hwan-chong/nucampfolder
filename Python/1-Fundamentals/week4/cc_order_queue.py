@@ -27,8 +27,8 @@ class IceCreamShop:
         self.flavor = flavor
         self.scoops = scoops
 
-        valid_flavor = self.flavor in self.flavors
-        valid_scoop = self.scoops > 0 and self.scoops <= 3
+        valid_flavor = flavor in self.flavors
+        valid_scoop = scoops > 0 and self.scoops <= 3
 
         if valid_flavor == False:
             print("Sorry, we don't have that flavor")
@@ -36,8 +36,8 @@ class IceCreamShop:
             print("Choose between 1-3 scoops")
         else:
             print("Order created!")
-            order = {"customer": self.customer,
-                     "flavor": self.flavor, "scoops": self.scoops}
+            order = {"customer": customer,
+                     "flavor": flavor, "scoops": scoops}
             self.orders.enqueue(order)
 
     def show_all_orders(self):
