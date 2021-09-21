@@ -1,8 +1,9 @@
 true_door = 0
 
 door = [False, False, True]
-for i in range(1, 3):
-    if door[i]:
+for i in door:
+    print(i)
+    if door[i] == True:
         true_door = i + 1
         break
 print(true_door)
