@@ -22,3 +22,5 @@ y = np.random.rand(num)
 print(y)
 # %%
 plt.plot(x, y)
+
+# %%

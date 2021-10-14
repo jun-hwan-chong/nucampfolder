@@ -16,3 +16,5 @@ pyplot.colorbar()
 num = 500
 data = numpy.random.rand(num, num)
 pyplot.imshow(data, cmap='binary')
+
+# %%
